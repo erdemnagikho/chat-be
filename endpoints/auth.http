@@ -25,6 +25,27 @@ withCredentials: true
 }
 
 ###
+POST {{baseUrl}}/{{urlPath}}/forgot-password
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "email": "erdemnayir@gmail.com"
+}
+
+###
+POST {{baseUrl}}/{{urlPath}}/reset-password/b4ba15c3f70c2e061de0489d68f189eddf373894
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+
+###
 POST {{baseUrl}}/{{urlPath}}/signup
 Content-Type: application/json
 Accept: application/json
